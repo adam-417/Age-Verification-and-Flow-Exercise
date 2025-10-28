@@ -1,0 +1,71 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // 1. Ask the user to enter their age as a string
+        Console.Write("Enter your age: ");
+        string userInput = Console.ReadLine();
+
+        // 2. Convert the user's input to an integer and store it in a variable called "Age"
+        int Age = Convert.ToInt32(userInput);
+
+        // 3. Define a constant variable called LegalAge and set its value to 18
+        const int LegalAge = 18;
+
+        // 4. Use an if statement to check if the user's age is greater than or equal to LegalAge
+        if (Age >= LegalAge)
+        {
+            // 4a. If the user's age is greater than or equal to LegalAge
+            Console.WriteLine("You are an adult.");
+        }
+        else
+        {
+            // 4b. If the user's age is less than LegalAge
+            Console.WriteLine("You are under the legal age.");
+        }
+
+        // 5. Define a variable called "Counter" and assign it the value 1
+        int Counter = 1;
+
+        // 6. Use a while loop to run for as long as "Counter" is less than or equal to 5
+        while (Counter <= 5)
+        {
+            // 6a. Inside the loop, print the value of the counter to the console
+            Console.WriteLine("Counter: " + Counter);
+
+            // 6b. Increment the value of "Counter" by 1 within the loop
+            Counter++;
+        }
+
+        // 7. After the loop, use a switch statement to perform different actions based on the value of "Counter"
+        switch (Counter)
+        {
+            case 1:
+                Console.WriteLine("One");
+                break;
+            case 2:
+                Console.WriteLine("Two");
+                break;
+            case 3:
+                Console.WriteLine("Three");
+                break;
+            case 4:
+                Console.WriteLine("Four");
+                break;
+            case 5:
+                Console.WriteLine("Five");
+                break;
+            default:
+                Console.WriteLine("Invalid number");
+                break;
+        }
+
+        // 8. Use the keyword “var” to define a variable called name and assign it the value "John"
+        var name = "John";
+
+        // 9. Print a message welcoming the user and summarizing the results
+        Console.WriteLine($"Welcome, {name}! The program has finished running the loop and switch statement.");
+    }
+}
